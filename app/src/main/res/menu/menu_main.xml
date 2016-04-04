@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.huangsuqing.popularmovies.MainActivity">
+
+    <item
+        android:id="@+id/menus"
+        android:icon="@drawable/ic_sort_24dp"
+        android:title="sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:id="@+id/sort_order"
+                android:checkableBehavior="single">
+                <!--<item-->
+                    <!--android:id="@+id/action_settings"-->
+                    <!--android:orderInCategory="100"-->
+                    <!--android:title="@string/action_settings"-->
+                    <!--app:showAsAction="never" />-->
+                <item
+                    android:id="@+id/action_sort_popularity"
+                    android:title="@string/pref_titles_popular"
+                    android:checked="true"/>
+
+                <item
+                    android:id="@+id/action_sort_top_rated"
+                    android:title="@string/pref_titles_rated"/>
+
+                <item
+                    android:id="@+id/action_sort_now_playing"
+                    android:title="@string/pref_titles_now_playing"/>
+
+                <item android:id="@+id/action_sort_upcoming"
+                    android:title="@string/pref_titles_upcoming"/>
+
+                <item
+                    android:id="@+id/action_favorites"
+                    android:title="@string/Favorites"/>
+            </group>
+        </menu>
+    </item>
+</menu>
